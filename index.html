@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework-5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+    <h1>User profile</h1>
+    <ul class="form">
+        <li>
+            <label for="first-name" >First Name</label>
+            <input type="text" id="first-name" placeholder="Иван" required>
+        </li>
+        <li>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Иванов" required>
+        </li>
+        <li>
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" placeholder="Иванович">
+        </li>
+        <li>
+            <label for="date">Birth date</label>
+            <input type="date" id="date" placeholder="" required>
+        </li>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="male" id="male" value="male">Male<br>
+            <input type="radio" name="Female" id="female" value="female">Female
+        </fieldset>
+
+        <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="e-mail-address@gmail.com" required>
+        </li>
+        <li>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" placeholder="+375293333333">
+        </li>
+        <li>
+            <label for="country">Country</label>
+            <select id="country">
+                <option>Беларусь</option>
+                <option>Россия</option>
+            </select>
+        </li>
+        <li style="align-items: end !important;">
+            <label for="address">Address</label>
+            <textarea rows="6" id="address" required></textarea>
+        </li>
+        <div class="checkbox">
+            <label for="checkbox"> <input type="checkbox" id="checkbox">I accept terms in the
+                <span>licence agreement</span></label>
+        </div>
+        <li>
+            <button type="submit">Save</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>

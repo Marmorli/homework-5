@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form > li > label {
+    flex: 1 0 120px;
+    max-width: 100px;
+    margin: 10px;
+    padding: 5px
+}
+
+.form > li > label + * {
+    flex: 1 0 220px;
+}
+
+.form li textarea {
+    padding: 15px;
+}
+
+.form li button {
+    padding: 5px 85px;
+    background: blue;
+    color: white;
+    margin: 20px 0 0 125px;
+}
+
+.checkbox {
+    flex: 1 0 220px;
+}
+
+input:required + label::after {
+    content: "*";
+    color: red;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(icon/annual-calendar-page.png) 70% 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
